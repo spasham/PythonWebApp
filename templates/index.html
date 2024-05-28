@@ -1,0 +1,29 @@
+<!-- <html>
+    <title> Meters to Feet </title>
+    <form method="POST">
+    <label> Meters: </label>
+    <input type="text" name="textbox" value = {{user_text | safe}}> <br>
+    <label> Feet: </label>
+    <label> {{output | safe}} </label><br>
+    <button type="submit" name="submit">Convert</button>
+    </form>
+</html> -->
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Meters to Feet</title>
+</head>
+<body>
+    <h1>Meters to Feet Converter</h1>
+    <form method="POST" action="/">
+        <label for="textbox">Meters:</label>
+        <input type="text" id="textbox" name="textbox" value="{{ user_text | safe }}">
+        <br>
+        <label>Feet:</label>
+        <label>{{ output | safe }}</label>
+        <br>
+        <button type="submit" name="submit">Convert</button>
+    </form>
